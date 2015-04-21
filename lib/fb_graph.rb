@@ -72,7 +72,7 @@ module FbGraph
 
   def self.http_client
     _http_client_ = HTTPClient.new(
-      :proxy => "127.0.0.1:8881",
+      :proxy => "127.0.0.1:8888",
       :agent_name => "FbGraph (#{VERSION})"
     )
     _http_client_.request_filter << RequestFilters::Scrubber.new
